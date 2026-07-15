@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tye Parque — Parque infantil inflable y fiestas de cumpleaños</title>
+  <meta name="description" content="Tye Parque: parque infantil inflable para fiestas de cumpleaños. Reserva tu día y hora en línea. Entradas, bonos y paquetes de cumpleaños." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#inicio">
+        <img src="assets/logo.svg" alt="" width="40" height="40" />
+        <span class="logo-text">Tye <span>Parque</span></span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">☰</button>
+      <nav class="main-nav" id="main-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#paquetes">Cumpleaños</a>
+        <a href="#entradas">Entradas</a>
+        <a href="#reservar">Reservar</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <span class="hero-eyebrow">Diversión inflable para toda la familia</span>
+        <h1>Fiestas de cumpleaños inolvidables en Tye Parque</h1>
+        <p>Castillos inflables, juegos y toda la energía que tus hijos necesitan. Elige tu día, tu horario y celebra sin complicaciones.</p>
+        <div class="hero-actions">
+          <a class="btn btn-outline" href="#paquetes">Ver paquetes de cumpleaños</a>
+          <a class="btn btn-primary" href="#reservar" style="background:#fff;color:var(--color-primary-dark);">Reservar ahora</a>
+        </div>
+        <div class="trust-badges">
+          <span class="trust-badge">🛡️ Espacio seguro y supervisado</span>
+          <span class="trust-badge">🎈 Ideal para todas las edades</span>
+          <span class="trust-badge">📅 Reserva en línea</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Paquetes de cumpleaños ===== -->
+    <section id="paquetes" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Paquetes de cumpleaños</h2>
+          <p class="section-lead">Elige la duración ideal para la fiesta de tu hijo o hija. Incluye acceso a los inflables durante todo el evento.</p>
+        </div>
+        <div class="card-grid card-grid--2">
+
+          <div class="card">
+            <span class="chip chip--cumple">Cumpleaños</span>
+            <h3>Paquete 2 horas</h3>
+            <p>Acceso a todos los inflables por 2 horas, ambientación básica de fiesta y un espacio reservado para tu grupo.</p>
+            <div class="price-row">
+              <!-- PLACEHOLDER:PRICE -->
+              <span class="price-example">$2,500 MXN</span>
+            </div>
+            <small class="placeholder-note">Precio de ejemplo — ajústalo según tus tarifas</small>
+            <button class="btn btn-primary btn-block reservar-paquete" data-package="cumple_2h">Reservar este paquete</button>
+          </div>
+
+          <div class="card">
+            <span class="chip chip--cumple">Cumpleaños</span>
+            <h3>Paquete 3 horas</h3>
+            <p>Acceso a todos los inflables por 3 horas, ambientación básica de fiesta y un espacio reservado para tu grupo, con más tiempo para disfrutar.</p>
+            <div class="price-row">
+              <!-- PLACEHOLDER:PRICE -->
+              <span class="price-example">$3,200 MXN</span>
+            </div>
+            <small class="placeholder-note">Precio de ejemplo — ajústalo según tus tarifas</small>
+            <button class="btn btn-primary btn-block reservar-paquete" data-package="cumple_3h">Reservar este paquete</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Entradas y bonos ===== -->
+    <section id="entradas" class="section section--alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Entradas y bonos</h2>
+          <p class="section-lead">¿No es un cumpleaños? También puedes venir a jugar por hora, o ahorrar con nuestros bonos de varias horas.</p>
+        </div>
+        <div class="card-grid">
+
+          <div class="card">
+            <span class="chip chip--entrada">Entrada</span>
+            <h3>30 minutos</h3>
+            <p>Acceso a los inflables durante 30 minutos. Ideal para una visita corta.</p>
+            <div class="price-row">
+              <!-- PLACEHOLDER:PRICE -->
+              <span class="price-example">$80 MXN</span>
+            </div>
+            <small class="placeholder-note">Precio de ejemplo — ajústalo según tus tarifas</small>
+            <button class="btn btn-secondary btn-block reservar-paquete" data-package="entrada_30m">Reservar</button>
+          </div>
+
+          <div class="card">
+            <span class="chip chip--entrada">Entrada</span>
+            <h3>1 hora</h3>
+            <p>Acceso a los inflables durante 1 hora completa de diversión.</p>
+            <div class="price-row">
+              <!-- PLACEHOLDER:PRICE -->
+              <span class="price-example">$120 MXN</span>
+            </div>
+            <small class="placeholder-note">Precio de ejemplo — ajústalo según tus tarifas</small>
+            <button class="btn btn-secondary btn-block reservar-paquete" data-package="entrada_1h">Reservar</button>
+          </div>
+
+          <div class="card">
+            <span class="chip chip--bono">Bono</span>
+            <h3>Bono 6 horas</h3>
+            <p>Bolsa de 6 horas de juego para usar en una o varias visitas.</p>
+            <div class="price-row">
+              <!-- PLACEHOLDER:PRICE -->
+              <span class="price-example">$600 MXN</span>
+            </div>
+            <small class="placeholder-note">Precio de ejemplo — ajústalo según tus tarifas</small>
+            <button class="btn btn-secondary btn-block reservar-paquete" data-package="bono_6h">Reservar</button>
+          </div>
+
+          <div class="card">
+            <span class="chip chip--bono">Bono</span>
+            <h3>Bono 10 horas</h3>
+            <p>Bolsa de 10 horas de juego para usar en una o varias visitas. Nuestro mejor precio por hora.</p>
+            <div class="price-row">
+              <!-- PLACEHOLDER:PRICE -->
+              <span class="price-example">$900 MXN</span>
+            </div>
+            <small class="placeholder-note">Precio de ejemplo — ajústalo según tus tarifas</small>
+            <button class="btn btn-secondary btn-block reservar-paquete" data-package="bono_10h">Reservar</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Reservar ===== -->
+    <section id="reservar" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Reserva tu día y hora</h2>
+          <p class="section-lead">Selecciona el paquete, el día y el horario que prefieras. Te confirmaremos tu reserva por correo o teléfono.</p>
+        </div>
+
+        <div class="reserve-layout">
+
+          <div class="calendar-card">
+            <div class="reserve-note">
+              Estos horarios están sujetos a confirmación por parte de Tye Parque. Al enviar el formulario, se abrirá tu correo para completar la solicitud.
+            </div>
+            <div class="calendar-header">
+              <button type="button" id="cal-prev" aria-label="Mes anterior">‹</button>
+              <span id="calendar-month-label"></span>
+              <button type="button" id="cal-next" aria-label="Mes siguiente">›</button>
+            </div>
+            <div class="calendar-weekdays">
+              <span>D</span><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span>
+            </div>
+            <div class="calendar-grid" id="calendar-grid"></div>
+
+            <div class="timeslots-wrap">
+              <h4>Horarios disponibles</h4>
+              <p class="muted-hint" id="timeslots-hint">Elige primero un paquete y un día para ver los horarios.</p>
+              <div class="timeslot-grid" id="timeslot-grid"></div>
+            </div>
+
+            <p class="selection-summary" id="selection-summary"></p>
+          </div>
+
+          <div class="form-card">
+            <form id="reservation-form" novalidate>
+              <div class="form-field">
+                <label for="paquete">Paquete o entrada <span class="required-mark">*</span></label>
+                <select id="paquete" name="paquete" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="cumple_2h">Cumpleaños — 2 horas</option>
+                  <option value="cumple_3h">Cumpleaños — 3 horas</option>
+                  <option value="entrada_30m">Entrada — 30 minutos</option>
+                  <option value="entrada_1h">Entrada — 1 hora</option>
+                  <option value="bono_6h">Bono — 6 horas</option>
+                  <option value="bono_10h">Bono — 10 horas</option>
+                </select>
+                <span class="field-error">Selecciona un paquete o entrada.</span>
+              </div>
+
+              <div class="form-field">
+                <label for="fecha">Fecha seleccionada <span class="required-mark">*</span></label>
+                <input type="text" id="fecha" name="fecha" placeholder="Elige un día en el calendario" readonly required />
+                <span class="field-error">Selecciona un día en el calendario.</span>
+              </div>
+
+              <div class="form-field">
+                <label for="hora">Horario seleccionado <span class="required-mark">*</span></label>
+                <input type="text" id="hora" name="hora" placeholder="Elige un horario disponible" readonly required />
+                <span class="field-error">Selecciona un horario disponible.</span>
+              </div>
+
+              <div class="form-field">
+                <label for="nombre">Nombre completo <span class="required-mark">*</span></label>
+                <input type="text" id="nombre" name="nombre" required />
+                <span class="field-error">Escribe tu nombre.</span>
+              </div>
+
+              <div class="form-field">
+                <label for="telefono">Teléfono / WhatsApp <span class="required-mark">*</span></label>
+                <input type="tel" id="telefono" name="telefono" required />
+                <span class="field-error">Escribe un teléfono válido.</span>
+              </div>
+
+              <div class="form-field">
+                <label for="email">Correo electrónico <span class="required-mark">*</span></label>
+                <input type="email" id="email" name="email" required />
+                <span class="field-error">Escribe un correo válido.</span>
+              </div>
+
+              <div class="form-field">
+                <label for="mensaje">Mensaje adicional (opcional)</label>
+                <textarea id="mensaje" name="mensaje" rows="3"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Enviar solicitud de reserva</button>
+
+              <div class="form-status" id="form-status" role="status"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contacto ===== -->
+    <section id="contacto" class="section section--alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contacto</h2>
+          <p class="section-lead">¿Tienes dudas? Escríbenos, llámanos o visítanos.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="icon">📍</div>
+            <h3>Ubicación</h3>
+            <p class="placeholder-text">[Dirección — completar]<br />[Ciudad — completar]</p>
+          </div>
+          <div class="contact-card">
+            <div class="icon">📞</div>
+            <h3>Teléfono / WhatsApp</h3>
+            <p class="placeholder-text">[Teléfono/WhatsApp — completar]</p>
+          </div>
+          <div class="contact-card">
+            <div class="icon">✉️</div>
+            <h3>Correo</h3>
+            <p><a href="mailto:Tyeparque@hotmail.com">Tyeparque@hotmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="" width="32" height="32" />
+        <span class="logo-text" style="color:#fff;">Tye Parque</span>
+      </div>
+      <p>© <span id="footer-year"></span> Tye Parque · <a href="mailto:Tyeparque@hotmail.com">Tyeparque@hotmail.com</a></p>
+      <p class="footer-disclaimer">Sitio en construcción — los precios y datos de contacto son de ejemplo y serán actualizados próximamente.</p>
+    </div>
+  </footer>
+
+  <script src="js/calendar.js" defer></script>
+  <script src="js/form.js" defer></script>
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+    document.getElementById('nav-toggle').addEventListener('click', function () {
+      var nav = document.getElementById('main-nav');
+      var isOpen = nav.classList.toggle('is-open');
+      this.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    document.getElementById('main-nav').addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') {
+        this.classList.remove('is-open');
+        document.getElementById('nav-toggle').setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
+</body>
+</html>
