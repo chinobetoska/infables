@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 380" fill="none" role="img" aria-label="Castillo inflable">
+  <!-- Sombra en el suelo -->
+  <ellipse cx="240" cy="352" rx="196" ry="16" fill="#1a1a1f" opacity="0.08"/>
+
+  <!-- Base / colchoneta -->
+  <rect x="44" y="298" width="392" height="56" rx="20" fill="#C400E0"/>
+  <rect x="44" y="298" width="392" height="20" rx="10" fill="#D94DEC"/>
+
+  <!-- Cuerpo principal -->
+  <rect x="116" y="172" width="248" height="146" rx="24" fill="#FF00AA"/>
+  <!-- Costuras verticales (tubos inflables) -->
+  <g stroke="#D6008E" stroke-width="4" stroke-linecap="round" opacity="0.55">
+    <line x1="164" y1="188" x2="164" y2="304"/>
+    <line x1="212" y1="188" x2="212" y2="304"/>
+    <line x1="268" y1="188" x2="268" y2="304"/>
+    <line x1="316" y1="188" x2="316" y2="304"/>
+  </g>
+  <!-- Almenas -->
+  <g fill="#FF00AA">
+    <rect x="134" y="152" width="40" height="26" rx="9"/>
+    <rect x="191" y="152" width="40" height="26" rx="9"/>
+    <rect x="248" y="152" width="40" height="26" rx="9"/>
+    <rect x="305" y="152" width="40" height="26" rx="9"/>
+  </g>
+
+  <!-- Torre izquierda -->
+  <rect x="58" y="150" width="76" height="168" rx="30" fill="#00C2E8"/>
+  <g stroke="#0092B0" stroke-width="4" stroke-linecap="round" opacity="0.5">
+    <line x1="74" y1="196" x2="118" y2="196"/>
+    <line x1="74" y1="248" x2="118" y2="248"/>
+  </g>
+  <!-- Torre derecha -->
+  <rect x="346" y="150" width="76" height="168" rx="30" fill="#00C2E8"/>
+  <g stroke="#0092B0" stroke-width="4" stroke-linecap="round" opacity="0.5">
+    <line x1="362" y1="196" x2="406" y2="196"/>
+    <line x1="362" y1="248" x2="406" y2="248"/>
+  </g>
+
+  <!-- Techos cónicos -->
+  <path d="M54 154 L96 98 L138 154 Z" fill="#FF8A00"/>
+  <path d="M342 154 L384 98 L426 154 Z" fill="#FF8A00"/>
+  <path d="M70 142 L96 106 L122 142 Z" fill="#FFB347"/>
+  <path d="M358 142 L384 106 L410 142 Z" fill="#FFB347"/>
+
+  <!-- Banderines en las torres -->
+  <line x1="96" y1="100" x2="96" y2="72" stroke="#55525f" stroke-width="3" stroke-linecap="round"/>
+  <path d="M96 74 L122 81 L96 88 Z" fill="#FFEE00"/>
+  <line x1="384" y1="100" x2="384" y2="72" stroke="#55525f" stroke-width="3" stroke-linecap="round"/>
+  <path d="M384 74 L358 81 L384 88 Z" fill="#AEEA00"/>
+
+  <!-- Guirnalda de banderines -->
+  <path d="M96 104 Q240 140 384 104" stroke="#8E00A3" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <g>
+    <path d="M117 110 L133 110 L125 130 Z" fill="#FFEE00"/>
+    <path d="M146 116 L162 116 L154 136 Z" fill="#00C2E8"/>
+    <path d="M175 119 L191 119 L183 139 Z" fill="#AEEA00"/>
+    <path d="M204 121 L220 121 L212 141 Z" fill="#FF8A00"/>
+    <path d="M232 122 L248 122 L240 142 Z" fill="#EE1111"/>
+    <path d="M261 121 L277 121 L269 141 Z" fill="#00C2E8"/>
+    <path d="M289 119 L305 119 L297 139 Z" fill="#FFEE00"/>
+    <path d="M318 116 L334 116 L326 136 Z" fill="#AEEA00"/>
+    <path d="M347 110 L363 110 L355 130 Z" fill="#FF8A00"/>
+  </g>
+
+  <!-- Arco de entrada -->
+  <path d="M192 318 V252 a48 48 0 0 1 96 0 V318 Z" fill="#FFEE00"/>
+  <path d="M204 318 V254 a36 36 0 0 1 72 0 V318 Z" fill="#5A1250"/>
+  <path d="M204 254 a36 36 0 0 1 72 0" stroke="#7A2270" stroke-width="4" fill="none"/>
+  <!-- Escalón / tapete de entrada -->
+  <rect x="186" y="310" width="108" height="16" rx="8" fill="#AEEA00"/>
+</svg>

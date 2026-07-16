@@ -6,9 +6,61 @@
   <title>Tye Parque — Parque infantil inflable y fiestas de cumpleaños</title>
   <meta name="description" content="Tye Parque: parque infantil inflable para fiestas de cumpleaños. Reserva tu día y hora en línea. Entradas, bonos y paquetes de cumpleaños." />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+
+  <!-- ===== Sprite de íconos SVG (reutilizables con <use>) ===== -->
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/>
+    </symbol>
+    <symbol id="i-balloon" viewBox="0 0 24 24" fill="currentColor">
+      <ellipse cx="12" cy="8.5" rx="5.5" ry="6.5"/>
+      <path d="M11 15h2l-.6 2.2h-.8z"/>
+      <path d="M12 17.5c0 2 1.6 2 1.6 4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 3v4M16 3v4"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>
+    </symbol>
+    <symbol id="i-cake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 21h16M5 21v-7a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v7"/>
+      <path d="M4 15c1.2 1 2.3 1 3.5 0s2.3-1 3.5 0 2.3 1 3.5 0 2.3-1 3.5 0"/>
+      <path d="M12 8V5.5"/><circle cx="12" cy="3.6" r="1.1" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="i-ticket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2 2 2 0 0 0 0 4 2 2 0 0 1-2 2H5a2 2 0 0 1-2-2 2 2 0 0 0 0-4z"/>
+      <path d="M15 7v10" stroke-dasharray="2 3"/>
+    </symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4" y="9.5" width="16" height="11.5" rx="1.6"/><path d="M3 9.5h18M12 9.5V21"/>
+      <path d="M12 9.5C11 6.5 9 5.5 7.6 6S6.2 8.6 8 9.5M12 9.5c1-3 3-4 4.4-3.5S18 8.6 16 9.5"/>
+    </symbol>
+    <symbol id="i-location" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21c4-4.5 7-8 7-11a7 7 0 0 0-14 0c0 3 3 6.5 7 11z"/><circle cx="12" cy="10" r="2.5"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 3h3l1.5 5-2 1.5a12 12 0 0 0 6 6l1.5-2 5 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M4 7.5l8 5.5 8-5.5"/>
+    </symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2.5l2.6 5.7 6.2.7-4.6 4.2 1.3 6.1L12 16.9 6.5 19.2l1.3-6.1L3.2 8.9l6.2-.7z"/>
+    </symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+      <path d="M4 7h16M4 12h16M4 17h16"/>
+    </symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.28.86 5.84 2.42a8.2 8.2 0 0 1 2.42 5.83c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43l-.48-.01c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/>
+    </symbol>
+  </svg>
 
   <header class="site-header">
     <div class="container">
@@ -16,7 +68,9 @@
         <img src="assets/logo.svg" alt="" width="40" height="40" />
         <span class="logo-text">Tye <span>Parque</span></span>
       </a>
-      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">☰</button>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
       <nav class="main-nav" id="main-nav">
         <a href="#inicio">Inicio</a>
         <a href="#paquetes">Cumpleaños</a>
@@ -31,32 +85,49 @@
 
     <!-- ===== Hero ===== -->
     <section id="inicio" class="hero">
+      <span class="conf conf--1" aria-hidden="true"></span>
+      <span class="conf conf--2" aria-hidden="true"></span>
+      <span class="conf conf--3" aria-hidden="true"></span>
+      <span class="conf conf--4" aria-hidden="true"></span>
+      <span class="conf conf--5" aria-hidden="true"></span>
+      <span class="conf conf--6" aria-hidden="true"></span>
+
+      <svg class="hero-balloon hero-balloon--a" aria-hidden="true"><use href="#i-balloon"/></svg>
+      <svg class="hero-balloon hero-balloon--b" aria-hidden="true"><use href="#i-balloon"/></svg>
+      <svg class="hero-balloon hero-balloon--c" aria-hidden="true"><use href="#i-balloon"/></svg>
+
       <div class="container hero-inner">
-        <span class="hero-eyebrow">Diversión inflable para toda la familia</span>
-        <h1>Fiestas de cumpleaños inolvidables en Tye Parque</h1>
-        <p>Castillos inflables, juegos y toda la energía que tus hijos necesitan. Elige tu día, tu horario y celebra sin complicaciones.</p>
-        <div class="hero-actions">
-          <a class="btn btn-outline" href="#paquetes">Ver paquetes de cumpleaños</a>
-          <a class="btn btn-primary" href="#reservar" style="background:#fff;color:var(--color-primary-dark);">Reservar ahora</a>
+        <div class="hero-copy">
+          <span class="hero-eyebrow">Diversión inflable para toda la familia</span>
+          <h1>Fiestas de cumpleaños inolvidables en Tye Parque</h1>
+          <p>Castillos inflables, juegos y toda la energía que tus hijos necesitan. Elige tu día, tu horario y celebra sin complicaciones.</p>
+          <div class="hero-actions">
+            <a class="btn btn-outline" href="#paquetes">Ver paquetes de cumpleaños</a>
+            <a class="btn btn-on-hero" href="#reservar">Reservar ahora</a>
+          </div>
+          <div class="trust-badges">
+            <span class="trust-badge"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg> Espacio seguro y supervisado</span>
+            <span class="trust-badge"><svg class="icon" aria-hidden="true"><use href="#i-balloon"/></svg> Ideal para todas las edades</span>
+            <span class="trust-badge"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Reserva en línea</span>
+          </div>
         </div>
-        <div class="trust-badges">
-          <span class="trust-badge">🛡️ Espacio seguro y supervisado</span>
-          <span class="trust-badge">🎈 Ideal para todas las edades</span>
-          <span class="trust-badge">📅 Reserva en línea</span>
+        <div class="hero-art">
+          <img src="assets/hero-castle.svg" alt="" class="hero-castle" width="480" height="380" />
         </div>
       </div>
     </section>
 
     <!-- ===== Paquetes de cumpleaños ===== -->
-    <section id="paquetes" class="section">
+    <section id="paquetes" class="section scallop-top">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <h2>Paquetes de cumpleaños</h2>
           <p class="section-lead">Elige la duración ideal para la fiesta de tu hijo o hija. Incluye acceso a los inflables durante todo el evento.</p>
         </div>
         <div class="card-grid card-grid--2">
 
-          <div class="card">
+          <div class="card reveal">
+            <div class="card-icon card-icon--cumple"><svg aria-hidden="true"><use href="#i-cake"/></svg></div>
             <span class="chip chip--cumple">Cumpleaños</span>
             <h3>Paquete 2 horas</h3>
             <p>Acceso a todos los inflables por 2 horas, ambientación básica de fiesta y un espacio reservado para tu grupo.</p>
@@ -68,7 +139,9 @@
             <button class="btn btn-primary btn-block reservar-paquete" data-package="cumple_2h">Reservar este paquete</button>
           </div>
 
-          <div class="card">
+          <div class="card card--featured reveal">
+            <span class="card-ribbon"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> Más popular</span>
+            <div class="card-icon card-icon--cumple"><svg aria-hidden="true"><use href="#i-cake"/></svg></div>
             <span class="chip chip--cumple">Cumpleaños</span>
             <h3>Paquete 3 horas</h3>
             <p>Acceso a todos los inflables por 3 horas, ambientación básica de fiesta y un espacio reservado para tu grupo, con más tiempo para disfrutar.</p>
@@ -85,15 +158,16 @@
     </section>
 
     <!-- ===== Entradas y bonos ===== -->
-    <section id="entradas" class="section section--alt">
+    <section id="entradas" class="section section--alt scallop-top">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <h2>Entradas y bonos</h2>
           <p class="section-lead">¿No es un cumpleaños? También puedes venir a jugar por hora, o ahorrar con nuestros bonos de varias horas.</p>
         </div>
         <div class="card-grid">
 
-          <div class="card">
+          <div class="card reveal">
+            <div class="card-icon card-icon--entrada"><svg aria-hidden="true"><use href="#i-ticket"/></svg></div>
             <span class="chip chip--entrada">Entrada</span>
             <h3>30 minutos</h3>
             <p>Acceso a los inflables durante 30 minutos. Ideal para una visita corta.</p>
@@ -105,7 +179,8 @@
             <button class="btn btn-secondary btn-block reservar-paquete" data-package="entrada_30m">Reservar</button>
           </div>
 
-          <div class="card">
+          <div class="card reveal">
+            <div class="card-icon card-icon--entrada"><svg aria-hidden="true"><use href="#i-ticket"/></svg></div>
             <span class="chip chip--entrada">Entrada</span>
             <h3>1 hora</h3>
             <p>Acceso a los inflables durante 1 hora completa de diversión.</p>
@@ -117,7 +192,8 @@
             <button class="btn btn-secondary btn-block reservar-paquete" data-package="entrada_1h">Reservar</button>
           </div>
 
-          <div class="card">
+          <div class="card reveal">
+            <div class="card-icon card-icon--bono"><svg aria-hidden="true"><use href="#i-gift"/></svg></div>
             <span class="chip chip--bono">Bono</span>
             <h3>Bono 6 horas</h3>
             <p>Bolsa de 6 horas de juego para usar en una o varias visitas.</p>
@@ -129,7 +205,8 @@
             <button class="btn btn-secondary btn-block reservar-paquete" data-package="bono_6h">Reservar</button>
           </div>
 
-          <div class="card">
+          <div class="card reveal">
+            <div class="card-icon card-icon--bono"><svg aria-hidden="true"><use href="#i-gift"/></svg></div>
             <span class="chip chip--bono">Bono</span>
             <h3>Bono 10 horas</h3>
             <p>Bolsa de 10 horas de juego para usar en una o varias visitas. Nuestro mejor precio por hora.</p>
@@ -146,16 +223,16 @@
     </section>
 
     <!-- ===== Reservar ===== -->
-    <section id="reservar" class="section">
+    <section id="reservar" class="section scallop-top">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <h2>Reserva tu día y hora</h2>
           <p class="section-lead">Selecciona el paquete, el día y el horario que prefieras. Te confirmaremos tu reserva por correo o teléfono.</p>
         </div>
 
         <div class="reserve-layout">
 
-          <div class="calendar-card">
+          <div class="calendar-card reveal">
             <div class="reserve-note">
               Estos horarios están sujetos a confirmación por parte de Tye Parque. Al enviar el formulario, se abrirá tu correo para completar la solicitud.
             </div>
@@ -178,7 +255,7 @@
             <p class="selection-summary" id="selection-summary"></p>
           </div>
 
-          <div class="form-card">
+          <div class="form-card reveal">
             <form id="reservation-form" novalidate>
               <div class="form-field">
                 <label for="paquete">Paquete o entrada <span class="required-mark">*</span></label>
@@ -240,25 +317,25 @@
     </section>
 
     <!-- ===== Contacto ===== -->
-    <section id="contacto" class="section section--alt">
+    <section id="contacto" class="section section--alt scallop-top">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <h2>Contacto</h2>
           <p class="section-lead">¿Tienes dudas? Escríbenos, llámanos o visítanos.</p>
         </div>
         <div class="contact-grid">
-          <div class="contact-card">
-            <div class="icon">📍</div>
+          <div class="contact-card reveal">
+            <div class="contact-icon contact-icon--location"><svg aria-hidden="true"><use href="#i-location"/></svg></div>
             <h3>Ubicación</h3>
             <p class="placeholder-text">[Dirección — completar]<br />[Ciudad — completar]</p>
           </div>
-          <div class="contact-card">
-            <div class="icon">📞</div>
+          <div class="contact-card reveal">
+            <div class="contact-icon contact-icon--phone"><svg aria-hidden="true"><use href="#i-phone"/></svg></div>
             <h3>Teléfono / WhatsApp</h3>
             <p class="placeholder-text">[Teléfono/WhatsApp — completar]</p>
           </div>
-          <div class="contact-card">
-            <div class="icon">✉️</div>
+          <div class="contact-card reveal">
+            <div class="contact-icon contact-icon--mail"><svg aria-hidden="true"><use href="#i-mail"/></svg></div>
             <h3>Correo</h3>
             <p><a href="mailto:Tyeparque@hotmail.com">Tyeparque@hotmail.com</a></p>
           </div>
@@ -268,7 +345,7 @@
 
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer scallop-top">
     <div class="container">
       <div class="brand">
         <img src="assets/logo.svg" alt="" width="32" height="32" />
@@ -279,8 +356,15 @@
     </div>
   </footer>
 
+  <!-- ===== Botón flotante de WhatsApp ===== -->
+  <!-- PLACEHOLDER:WHATSAPP — reemplaza 5215500000000 por el número real con código de país -->
+  <a class="whatsapp-fab" href="https://wa.me/5215500000000?text=Hola%20Tye%20Parque,%20quiero%20información%20sobre%20una%20reserva" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  </a>
+
   <script src="js/calendar.js" defer></script>
   <script src="js/form.js" defer></script>
+  <script src="js/reveal.js" defer></script>
   <script>
     document.getElementById('footer-year').textContent = new Date().getFullYear();
     document.getElementById('nav-toggle').addEventListener('click', function () {
