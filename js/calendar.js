@@ -1,5 +1,5 @@
 /*
- * Calendario de reservas — Tye Parque
+ * Calendario de reservas — Trip Parque
  *
  * No existe backend ni base de datos: este calendario genera horarios
  * disponibles dinámicamente dentro del horario de operación configurado

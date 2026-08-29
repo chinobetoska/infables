@@ -1,5 +1,5 @@
 /*
- * Reveal al hacer scroll — Tye Parque
+ * Reveal al hacer scroll — Trip Parque
  *
  * Añade la clase `.is-visible` a los elementos `.reveal` cuando entran en el
  * viewport. Respeta `prefers-reduced-motion`: si el usuario prefiere menos

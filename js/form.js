@@ -1,15 +1,13 @@
 /*
- * Formulario de reserva — Tye Parque
+ * Formulario de reserva — Trip Parque
  *
- * No hay backend disponible, así que el envío construye un enlace mailto:
- * precompletado hacia Tyeparque@hotmail.com. Esto depende de que el
- * visitante tenga un cliente de correo configurado en su dispositivo; no
- * queda ningún registro del lado del servidor.
+ * No hay backend disponible, así que el envío construye un enlace de
+ * WhatsApp precompletado para que el visitante mande su solicitud.
  */
 (function () {
   'use strict';
 
-  var BUSINESS_EMAIL = 'Tyeparque@hotmail.com';
+  var BUSINESS_WHATSAPP_URL = 'https://wa.me/529903873912';
   var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   var PACKAGE_LABELS = {
@@ -84,12 +82,13 @@
     el.className = 'form-status is-visible is-' + type;
   }
 
-  function buildMailto(data) {
-    var subject = 'Solicitud de reserva - Tye Parque - ' + (PACKAGE_LABELS[data.paquete] || data.paquete);
+  function buildWhatsAppLink(data) {
     var lines = [
+      'Hola, vi su pagina y quiero apartar un inflable.',
+      '',
       'Nombre: ' + data.nombre,
-      'Teléfono: ' + data.telefono,
-      'Email: ' + data.email,
+      'Telefono / WhatsApp: ' + data.telefono,
+      'Correo: ' + data.email,
       'Paquete/Entrada: ' + (PACKAGE_LABELS[data.paquete] || data.paquete),
       'Fecha solicitada: ' + data.fecha,
       'Hora solicitada: ' + data.hora,
@@ -97,11 +96,7 @@
     if (data.mensaje) {
       lines.push('Mensaje adicional: ' + data.mensaje);
     }
-    lines.push('');
-    lines.push('— Enviado desde el sitio web de Tye Parque');
-
-    var body = lines.join('\n');
-    return 'mailto:' + BUSINESS_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    return BUSINESS_WHATSAPP_URL + '?text=' + encodeURIComponent(lines.join('\n'));
   }
 
   function init() {
@@ -127,13 +122,13 @@
         return;
       }
 
-      var mailtoLink = buildMailto(data);
+      var whatsappLink = buildWhatsAppLink(data);
       showStatus(
         statusEl,
-        'Se abrirá tu aplicación de correo con los datos completados. Si no se abre automáticamente, escríbenos a ' + BUSINESS_EMAIL + '.',
+        'Se abrirá WhatsApp con los datos de tu reserva listos para enviar.',
         'success'
       );
-      window.location.href = mailtoLink;
+      window.location.href = whatsappLink;
     });
   }
 

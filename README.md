@@ -1,6 +1,6 @@
-# Tye Parque
+# Trip Parque
 
-Sitio web estático para Tye Parque, un parque infantil inflable donde se celebran fiestas de cumpleaños.
+Sitio web estático para Trip Parque, un parque infantil inflable donde se celebran fiestas de cumpleaños.
 
 Incluye paquetes de cumpleaños (2 y 3 horas), entradas y bonos (30 min, 1 h, bono 6 h, bono 10 h), y un calendario de reservas para elegir día y horario.
 
@@ -10,9 +10,9 @@ No requiere instalación ni dependencias. Abre `index.html` en el navegador, o p
 
 ## Contenido de ejemplo
 
-Los precios (marcados con `<!-- PLACEHOLDER:PRICE -->`) y los datos de contacto (marcados entre corchetes, ej. `[Dirección — completar]`) son de ejemplo y deben actualizarse con la información real del negocio antes de publicar.
+Los precios (marcados con `<!-- PLACEHOLDER:PRICE -->`) son de ejemplo y deben actualizarse con la información real del negocio antes de publicar.
 
-El **número de WhatsApp** del botón flotante es un placeholder (marcado con `<!-- PLACEHOLDER:WHATSAPP -->` en `index.html`): reemplaza `5215500000000` por el número real con código de país.
+El **botón flotante de WhatsApp** y el **formulario de reservación** usan el enlace `https://wa.me/529903873912` con un mensaje prellenado para iniciar la conversación desde el sitio. El correo de contacto es `contacto@chinobetoska.com`.
 
 ## Detalles de diseño
 
