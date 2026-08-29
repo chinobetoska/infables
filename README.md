@@ -12,7 +12,7 @@ No requiere instalación ni dependencias. Abre `index.html` en el navegador, o p
 
 Los precios (marcados con `<!-- PLACEHOLDER:PRICE -->`) son de ejemplo y deben actualizarse con la información real del negocio antes de publicar.
 
-El **botón flotante de WhatsApp** y el **formulario de reservación** usan el enlace `https://wa.me/529903873912` con un mensaje prellenado para iniciar la conversación desde el sitio. El correo de contacto es `contacto@chinobetoska.com`.
+El **botón flotante de WhatsApp** y el **formulario de reservación** usan el enlace `https://wa.me/522461784632` con un mensaje prellenado para iniciar la conversación desde el sitio. El correo de contacto es `contacto@chinobetoska.com`.
 
 ## Detalles de diseño
 

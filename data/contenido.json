@@ -1,0 +1,205 @@
+{
+  "negocio": {
+    "nombre": "Trip Parque",
+    "telefono": "+52 246 178 4632",
+    "whatsapp": "522461784632",
+    "correo": "contacto@chinobetoska.com",
+    "eslogan": "Entrega, montaje y recolección incluidos."
+  },
+  "enlaceVersionRelacionada": {
+    "href": "index.html",
+    "label": "Versión parque"
+  },
+  "navegacion": [
+    { "id": "inicio", "label": "Inicio" },
+    { "id": "catalogo", "label": "Catálogo" },
+    { "id": "como-funciona", "label": "Cómo funciona" },
+    { "id": "fechas", "label": "Fechas" },
+    { "id": "contacto", "label": "Contacto" }
+  ],
+  "hero": {
+    "titulo": "Renta de inflables para tu fiesta",
+    "subtitulo": "Entrega, montaje y recolección incluidos. Consulta precios y aparta tu fecha en línea.",
+    "botones": {
+      "catalogo": "Ver catálogo",
+      "formulario": "Apartar mi fecha"
+    },
+    "insignias": [
+      "Montaje incluido",
+      "Equipo desinfectado",
+      "Cobertura a domicilio"
+    ]
+  },
+  "catalogoInfo": {
+    "titulo": "Catálogo de inflables",
+    "descripcion": "Explora los equipos disponibles para cumpleaños, bautizos, kermeses y fiestas familiares. Aparta por WhatsApp en cuanto encuentres el ideal.",
+    "precioLabel": "Precio por día",
+    "boton": "Apartar por WhatsApp"
+  },
+  "catalogo": [
+    {
+      "id": "castillo-grande",
+      "nombre": "Castillo grande",
+      "descripcion": "El clásico que nunca falla en cumpleaños y reuniones familiares.",
+      "medidas": "4 x 4 m",
+      "capacidad": "Hasta 12 niños",
+      "precio": 1200,
+      "imagen": "assets/inflables/castillo-grande.jpg",
+      "colorFondo": "#ff4aa3"
+    },
+    {
+      "id": "castillo-chico",
+      "nombre": "Castillo chico",
+      "descripcion": "Ideal para patios pequeños y fiestas con peques de preescolar.",
+      "medidas": "3 x 3 m",
+      "capacidad": "Hasta 8 niños",
+      "precio": 850,
+      "imagen": "assets/inflables/castillo-chico.jpg",
+      "colorFondo": "#00b8d9"
+    },
+    {
+      "id": "tobogan",
+      "nombre": "Tobogán inflable",
+      "descripcion": "Una opción vistosa y dinámica para fiestas con mucha energía.",
+      "medidas": "7 x 3.5 m",
+      "capacidad": "Niños de 5 a 12 años",
+      "precio": 1800,
+      "imagen": "assets/inflables/tobogan.jpg",
+      "colorFondo": "#ff8a00"
+    },
+    {
+      "id": "brincolin-alberca",
+      "nombre": "Brincolín con alberca de pelotas",
+      "descripcion": "Perfecto para consentir a los más pequeños con doble diversión.",
+      "medidas": "4.5 x 3.5 m",
+      "capacidad": "Hasta 10 niños",
+      "precio": 1450,
+      "imagen": "assets/inflables/brincolin-alberca.jpg",
+      "colorFondo": "#7c4dff"
+    },
+    {
+      "id": "toro-mecanico",
+      "nombre": "Toro mecánico",
+      "descripcion": "El favorito para eventos grandes, retos y ambiente vaquero.",
+      "medidas": "6 x 6 m",
+      "capacidad": "1 usuario por turno",
+      "precio": 3500,
+      "imagen": "assets/inflables/toro-mecanico.jpg",
+      "colorFondo": "#7b5e57"
+    },
+    {
+      "id": "carrito-algodones",
+      "nombre": "Carrito de algodones",
+      "descripcion": "Un extra dulce para complementar la experiencia de tu evento.",
+      "medidas": "1.8 x 1.2 m",
+      "capacidad": "Servicio para 40 a 60 personas",
+      "precio": 950,
+      "imagen": "assets/inflables/carrito-algodones.jpg",
+      "colorFondo": "#00c2a8"
+    }
+  ],
+  "comoFuncionaInfo": {
+    "titulo": "Cómo funciona",
+    "descripcion": "El proceso es rápido y claro para que apartes sin llamadas ni vueltas extra."
+  },
+  "comoFunciona": [
+    {
+      "icono": "i-calendar",
+      "titulo": "Eliges tu inflable y tu fecha",
+      "descripcion": "Revisa el catálogo, compara medidas y selecciona un día libre en el calendario para tu evento."
+    },
+    {
+      "icono": "i-whatsapp",
+      "titulo": "Apartas con anticipo por WhatsApp",
+      "descripcion": "Te abrimos la conversación con los datos listos para que confirmes disponibilidad y recibas instrucciones de anticipo."
+    },
+    {
+      "icono": "i-truck",
+      "titulo": "Llegamos, montamos y al final recogemos",
+      "descripcion": "Nos encargamos de la entrega, instalación y retiro del equipo para que tú te enfoques en la fiesta."
+    }
+  ],
+  "fechasInfo": {
+    "titulo": "Fechas disponibles",
+    "descripcion": "Selecciona un día libre y lo cargaremos directamente en tu solicitud.",
+    "nota": "Las fechas marcadas ya están apartadas. Las fechas libres se pueden seleccionar para enviar la solicitud.",
+    "resumenVacio": "Elige un día libre para llenar tu formulario.",
+    "resumenSeleccion": "Fecha elegida:"
+  },
+  "fechasApartadas": [
+    "2026-09-05",
+    "2026-09-12",
+    "2026-09-18",
+    "2026-09-20",
+    "2026-09-27"
+  ],
+  "formulario": {
+    "titulo": "Aparta tu fecha",
+    "descripcion": "Completa tus datos y abriremos WhatsApp con la solicitud lista para enviar.",
+    "boton": "Enviar por WhatsApp",
+    "campos": {
+      "inflable": "Inflable",
+      "fecha": "Fecha",
+      "hora": "Hora de entrega",
+      "nombre": "Nombre completo",
+      "telefono": "Teléfono / WhatsApp",
+      "direccion": "Dirección del evento",
+      "mensaje": "Mensaje adicional (opcional)"
+    },
+    "errores": {
+      "inflable": "Selecciona un inflable.",
+      "fecha": "Selecciona una fecha en el calendario.",
+      "hora": "Indica la hora de entrega.",
+      "nombre": "Escribe tu nombre completo.",
+      "telefono": "Escribe un teléfono válido.",
+      "direccion": "Escribe la dirección del evento."
+    },
+    "estadoError": "Revisa los campos marcados en rojo antes de enviar.",
+    "estadoExito": "Se abrirá WhatsApp con los datos de tu solicitud listos para enviar."
+  },
+  "cobertura": {
+    "titulo": "Cobertura y envío",
+    "texto": "Entregamos sin costo dentro de estas zonas. Fuera de ellas se cobra envío según la distancia.",
+    "zonas": [
+      "Tlaxcala",
+      "Apizaco",
+      "Santa Ana Chiautempan",
+      "Zacatelco"
+    ],
+    "notaEnvio": "Envío fuera de zona desde $150."
+  },
+  "faqInfo": {
+    "titulo": "Preguntas frecuentes",
+    "descripcion": "Respuestas rápidas a las dudas más comunes antes de apartar tu fecha."
+  },
+  "faq": [
+    {
+      "pregunta": "¿El montaje está incluido?",
+      "respuesta": "Sí. Nuestro equipo lleva el inflable, lo instala y verifica que quede funcionando correctamente antes de retirarse. Al finalizar el evento también pasamos por él para recogerlo."
+    },
+    {
+      "pregunta": "¿Cuánto espacio necesito?",
+      "respuesta": "Depende del modelo que elijas. En cada ficha indicamos las medidas aproximadas, pero recomendamos considerar al menos un metro libre alrededor para montaje, circulación y seguridad."
+    },
+    {
+      "pregunta": "¿Necesito contacto de luz?",
+      "respuesta": "Sí. La mayoría de los equipos requiere una conexión eléctrica doméstica cercana y estable para mantener el motor encendido durante el servicio. Si tu evento es en exterior, avísanos para revisar extensiones."
+    },
+    {
+      "pregunta": "¿Cuánto es el anticipo?",
+      "respuesta": "Normalmente apartamos con un anticipo del 50% del servicio. El resto se liquida el día del evento al momento de la entrega, salvo que acordemos algo distinto por escrito."
+    },
+    {
+      "pregunta": "¿Qué pasa si llueve?",
+      "respuesta": "Si el clima complica el montaje, revisamos contigo la opción de reprogramar según disponibilidad. Buscamos proteger el equipo y tu evento, así que la decisión se confirma contigo el mismo día."
+    }
+  ],
+  "contacto": {
+    "titulo": "Contacto",
+    "descripcion": "Escríbenos o llámanos para confirmar disponibilidad, cobertura y tiempo de entrega.",
+    "whatsappLabel": "WhatsApp",
+    "telefonoLabel": "Teléfono",
+    "correoLabel": "Correo",
+    "mensajeWhatsapp": "Hola, vi su página y quiero información sobre un inflable."
+  }
+}
