@@ -7,7 +7,7 @@
 (function () {
   'use strict';
 
-  var BUSINESS_WHATSAPP_URL = 'https://wa.me/522461784632';
+  var BUSINESS_WHATSAPP_URL = 'https://wa.me/529903873912';
   var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   var PACKAGE_LABELS = {
